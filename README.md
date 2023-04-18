@@ -39,6 +39,10 @@ sudo ln -s /usr/src/linux-headers-$(uname -r)/arch/arm /usr/src/linux-headers-$(
 
 
 
+# insmod command should run without any error response if driver module is compiled OK
+sudo insmod /lib/modules/$(uname -r)/kernel/drivers/net/wireless/8188eu.ko
+sudo depmod -a
+
 ### Compiling
 
 > make all
