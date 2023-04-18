@@ -30,6 +30,15 @@ Compiling & Building
 To compile the driver, you need to have make and a compiler installed. In addition,
 you must have the kernel headers installed. If you do not understand what this means,
 consult your distro.
+
+for zero 1:
+sudo ln -s /usr/src/linux-headers-$(uname -r)/arch/arm /usr/src/linux-headers-$(uname -r)/arch/armv6l
+
+for zero 2 32bit os):
+sudo ln -s /usr/src/linux-headers-$(uname -r)/arch/arm /usr/src/linux-headers-$(uname -r)/arch/armv7l
+
+
+
 ### Compiling
 
 > make all
